@@ -1,0 +1,63 @@
+body {
+    color: white;
+    background-color: rgb(0,0,50);
+    border: 3px solid lightblue;
+  }
+  .peliculas div {
+    margin: 5px;
+    background-color: rgb(10,10,80);
+    text-align: center;
+  }
+  
+  a:link {
+    color: rgb(150,150,255);
+  }
+  
+  a:visited {
+    color: rgb(0,0,155);
+  }
+  
+  a:hover {
+    color: rgb(50,50,255);
+  }
+  
+  a:active {
+    color: blue;
+  }
+  img {
+    min-width: 200px;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid white;
+  }
+  iframe {
+    max-width: 100%;
+  }
+  @media only screen and (min-width: 768px) {
+    img {
+      
+      max-width: 75%;
+      height: auto;
+      
+    }
+    .peliculas {
+      margin: 5px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "la-amenaza-fantasma el-ataque-de-los-clones la-venganza-de-los-sith"
+      "una-nueva-esperanza el-imperio-contraataca el-retorno-del-jedi"
+      "el-despertar-de-la-fuerza los-ultimos-jedi el-ascenso-de-skywalker"; 
+  }
+  .la-amenaza-fantasma { grid-area: la-amenaza-fantasma; }
+  .el-ataque-de-los-clones { grid-area: el-ataque-de-los-clones; }
+  .la-venganza-de-los-sith { grid-area: la-venganza-de-los-sith; }
+  .una-nueva-esperanza { grid-area: una-nueva-esperanza; }
+  .el-imperio-contraataca { grid-area: el-imperio-contraataca; }
+  .el-retorno-del-jedi { grid-area: el-retorno-del-jedi; }
+  .el-despertar-de-la-fuerza { grid-area: el-despertar-de-la-fuerza; }
+  .los-ultimos-jedi { grid-area: los-ultimos-jedi; }
+  .el-ascenso-de-skywalker { grid-area: el-ascenso-de-skywalker; }
+  }
